@@ -6,42 +6,43 @@
     시간복잡도: ???
     공간복잡도:O(n)
 '''
-def solution(skill, skill_trees):
-    tmp_idx = -1 # 이전에 체크한 인덱스(skill_tree)
-    st_idx = -1 # 이전에 체크한 인덱스(skill)
-    flag = True
-    f_s_flag = True
+def solution(skills, skill_trees):
+    pre_st_idx = -1 # 이전에 체크한 인덱스(skill_tree)
+    pre_skill_idx = -1 # 이전에 체크한 인덱스(skill)
+    is_answer = True # 정답인가
+    is_checked_first_skill = True # 첫번쨰 스킬은 찍었는가?
     answer = 0
 
-    for st in skill_trees:
-        flag = True
-        f_s_flag = True
-        tmp_idx = -1
-        st_idx = -1
-        for s in skill:
-            if s in st:
-                if f_s_flag == False:
+    for skill_tree in skill_trees:
+        # 다음 스킬트리 검사 전 변수 초기화
+        is_answer = True
+        is_checked_first_skill = True
+        pre_st_idx = -1
+        pre_skill_idx = -1
+        for skill in skills:
+            if skill in skill_tree:
+                if is_checked_first_skill == False:
                     # 첫 번째 스킬을 안배우고 다른 스킬을 배울 경우
-                    flag = False
+                    is_answer = False
                     break
-                i = st.index(s)
-                if tmp_idx == -1:
-                    tmp_idx = i
-                    st_idx = skill.index(s)
-                elif tmp_idx >= i or skill.index(s) - st_idx >= 2:
+                i = skill_tree.index(skill)
+                if pre_st_idx == -1:
+                    pre_st_idx = i
+                    pre_skill_idx = skill.index(skill)
+                elif pre_st_idx >= i or skill.index(skill) - pre_skill_idx >= 2:
                     # 스킬 트리 순서가 잘못 된 경우
-                    flag = False
+                    is_answer = False
                     break
                 else:
                     # 정상적인 스킬트리일 경우
-                    tmp_idx = i
-                    st_idx = skill.index(s)
+                    pre_st_idx = i
+                    pre_skill_idx = skill.index(skill)
             else:
                 # 첫 번쨰 스킬을 안배운 경우 체크
-                i = skill.index(s)
+                i = skill.index(skill)
                 if i == 0:
-                    f_s_flag = False
-        if flag:
+                    is_checked_first_skill = False
+        if is_answer:
             answer += 1
 
     return answer
