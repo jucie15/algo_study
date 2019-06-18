@@ -3,9 +3,10 @@
     선행 스킬 순서(인덱스를 이용)대로 스킬트리에 있는 순서 체크
  2019.06.17 - 오답(50%): (예외처리 미흡) 순서와 상관 없는 다른 스킬만 배울 경우와 첫 번쨰 스킬을 안 배울 경우 예외처리 안함.
  2019.06.14 - 정답
-    n = skills
-    m = skill_trees
-    시간복잡도: O(n*m^2)
+    n = skills의 길이
+    m = skill_trees의 길이
+    j = skill_trees 각 원소의 길이
+    시간복잡도: O(n*m*j)
     공간복잡도: O(m)
 '''
 def solution(skills, skill_trees):
