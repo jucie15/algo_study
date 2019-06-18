@@ -11,13 +11,11 @@ def solution(skill, skill_trees):
             if s in st:
                 i = st.index(s)
                 if tmp_idx == -1:
-                    tmp_idx = i
+                    tmp_idx = st.index(s)
                 elif tmp_idx > i:
                     print('false', st)
                     flag = False
                     break
-                else:
-                    tmp_idx = i
             else:
                 i = skill.index(s)
                 if i == 0:

@@ -23,9 +23,9 @@
 
 - #### Programmers
 
-  1. https://programmers.co.kr/learn/courses/30/lessons/42584?language=python3
-  2. https://programmers.co.kr/learn/courses/30/lessons/42586
-  3. https://programmers.co.kr/learn/courses/30/lessons/49993
+  1. [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584?language=python3)
+  2. [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
+  3. [2018윈터코딩-스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993)
 
 - #### Leetcode
 
