@@ -5,7 +5,8 @@
  2019.06.14 - 정답
     n = skills의 길이
     m = skill_trees의 길이
-    시간복잡도: O(n*m^2)
+    j = skill_trees 각 원소의 길이
+    시간복잡도: O(n*m*j)
     공간복잡도: O(m)
 '''
 def solution(skills, skill_trees):
