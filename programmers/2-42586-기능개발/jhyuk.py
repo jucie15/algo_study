@@ -29,6 +29,3 @@ def solution(progresses, speeds):
     # 남은 날짜의 마지막 인덱스 배포판단 여부를 추가한다.
     answer.append(deploy_count)
     return answer
-
-solution(ex_prog, ex_speeds)
-# solution(test1_prog, test1_speeds)
