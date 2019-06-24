@@ -28,6 +28,7 @@
   3. [2018윈터코딩-스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993)
   4. [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)
   5. [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
+  6. [소수찾기](https://programmers.co.kr/learn/courses/30/lessons/42839)
 
 - #### Leetcode
 
