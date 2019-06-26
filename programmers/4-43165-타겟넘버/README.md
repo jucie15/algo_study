@@ -1,14 +1,14 @@
 ### 해설
 
-    탐색문제로 재귀를 통해 모든 경우의 수 체크
+탐색문제로 재귀를 통해 모든 경우의 수 체크
 
-    n = 2 <= numbers < 20
+n = 2 <= numbers < 20
 
-    m = 1 <= target <= 1000
+m = 1 <= target <= 1000
 
-    시간복잡도: `O(2^n)`
+시간복잡도: `O(2^n)`
 
-    공간복잡도: `O(n+m)`
+공간복잡도: `O(n+m)`
 
 ```python
 def solution(numbers, target):
