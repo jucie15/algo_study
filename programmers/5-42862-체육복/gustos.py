@@ -8,7 +8,7 @@
     m = lost의 길이
     j = reserve의 길이
     시간복잡도: O(m*j)
-    공간복잡도: O(n+m+j)
+    공간복잡도: O(m+j)
 '''
 
 def solution(n, lost, reserve):
