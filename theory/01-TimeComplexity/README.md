@@ -14,30 +14,29 @@
       ```python
       # 원하는 값의 위치 탐색
       def search_index(arr: list, target: int) -> int:
-        for idx in range(0, arr):
-          if arr[idx] is target:
-        return idx
-        return -1
-      
+          for idx in range(0, arr):
+              if arr[idx] is target:
+                  return idx
+          return -1
       ```
-
-   2. #### 선형시간 이하 알고리즘
-
-      - ##### 성형 전 사진 찾기
-
-        ![](/Users/gustos/dev/python/algorithm/algo_study/img/theory/01-TimeComplexity/search-plastic-surgery.png)
-
-      - ##### 이진 탐색
-
-        - 정렬된 배열이 있을 경우 찾고자 하는 숫자가 있을 때 모든 수를 비교할 필요 없이 탐색이 가능한 `O(lgN)` 시간복잡도를 가진 알고리즘
+      
+2. #### 선형시간 이하 알고리즘
+   
+   - ##### 성형 전 사진 찾기
+   
+     ![](/Users/gustos/dev/python/algorithm/algo_study/img/theory/01-TimeComplexity/search-plastic-surgery.png)
+   
+   - ##### 이진 탐색
+   
+     - 정렬된 배열이 있을 경우 찾고자 하는 숫자가 있을 때 모든 수를 비교할 필요 없이 탐색이 가능한 `O(lgN)` 시간복잡도를 가진 알고리즘
           1. 배열의 중간 값을 선택한다.
           2. 중간 값과 찾고자 하는 값의 대소를 비교한다.
           3. 찾고자 하는 값이 없는 부분은 버린다.
              (찾고자 하는 값이 더 작을 경우 큰 부분을, 클 경우 작은 부분을 버린다.)
-
-        4. 해당 부분을 하나의 배열로 생각하고 찾고자 하는 값이 나올때까지 1~3번을 반복한다.
-
-        ```python
+   
+     4. 해당 부분을 하나의 배열로 생각하고 찾고자 하는 값이 나올때까지 1~3번을 반복한다.
+   
+     ```python
         # 원하는 값의 위치 탐색
         
         def binary_search(arr: list, target: int) -> int:
@@ -55,29 +54,29 @@
             return -1
         
         ```
-
-   3. #### 지수 시간 알고리즘
-
-      1. ##### 다항 시간 알고리즘
-
-         1. N, N^2, N^64 모두  다항 시간이지만..
+   
+3. #### 지수 시간 알고리즘
+   
+   1. ##### 다항 시간 알고리즘
+   
+      1. N, N^2, N^64 모두  다항 시간이지만..
          2. 이보다 더 오랜 시간이 걸리는 알고리즘이 있다.
-
-      2. ##### 알러지가 심한 친구들([집합 덮개 문제](https://dudri63.github.io/2019/01/25/algo15/))
-
-         ![](/Users/gustos/dev/python/algorithm/algo_study/img/theory/01-TimeComplexity/allergy.png)
-
-         1. 음식을 만드는 모든 경우의 수를 계산할 때마다. 모두 먹을 수 있는지 체크하기 때문에 시간복잡도는 (`O(N*M*2^M)`)
+   
+   2. ##### 알러지가 심한 친구들([집합 덮개 문제](https://dudri63.github.io/2019/01/25/algo15/))
+   
+      ![](/Users/gustos/dev/python/algorithm/algo_study/img/theory/01-TimeComplexity/allergy.png)
+   
+      1. 음식을 만드는 모든 경우의 수를 계산할 때마다. 모두 먹을 수 있는지 체크하기 때문에 시간복잡도는 (`O(N*M*2^M)`)
             1. M가지의 음식을 만들 경우와 만들지 않을 경우로 나눠 모든 경우의 수를 탐색한다. (`O(2^M)`)
             2. 경우의 수를 하나 만들 때마다 모두 먹을 수 있는지 체크한다. (`O(N*M)`)
             3. 모든 경우의 수를 체크한 후 모두 먹을 수 있는 경우에서 최소값을 구한다. (`O(N)`)
          2. 무식하게 풀어서 느린게 아니다 지수시간 알고리즘 보다 나은 다항시간 알고리즘이 존재하지 않는 문제도 아직 많다.
-
-      3. ##### 소인수 분해의 수행 시간
-
-         1. 입력으로 주어지는 숫자의 개수가 아니라 숫자의 크기에 따라 수행시간이 달라질수도 있다.
+   
+   3. ##### 소인수 분해의 수행 시간
+   
+      1. 입력으로 주어지는 숫자의 개수가 아니라 숫자의 크기에 따라 수행시간이 달라질수도 있다.
          2. 소인수 분해의 경우 주어진 숫자 `N이 1이 될 때까지` 나누기 때문에 크기 때문에 달라진다.
-
+   
 3. ### 시간 복잡도
 
    ![](/Users/gustos/dev/python/algorithm/algo_study/img/theory/01-TimeComplexity/time_complexity_graph.png)
