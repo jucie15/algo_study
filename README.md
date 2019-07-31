@@ -87,3 +87,9 @@
 
 - #### Algospot
   1. [게임판 덮기](https://algospot.com/judge/problem/read/BOARDCOVER)
+
+
+- #### Baekjoon
+  1. [막대기](https://www.acmicpc.net/problem/1094)
+  2. [피보나치 수2](https://www.acmicpc.net/problem/2748)
+  3. [단어 공부](https://www.acmicpc.net/problem/1157)
