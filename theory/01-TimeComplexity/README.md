@@ -24,7 +24,7 @@
    
    - ##### 성형 전 사진 찾기
    
-     ![](/Users/gustos/dev/python/algorithm/algo_study/img/theory/01-TimeComplexity/search-plastic-surgery.png)
+     ![](../../img/theory/01-TimeComplexity/search-plastic-surgery.png)
    
    - ##### 이진 탐색
    
@@ -64,7 +64,7 @@
    
    2. ##### 알러지가 심한 친구들([집합 덮개 문제](https://dudri63.github.io/2019/01/25/algo15/))
    
-      ![](/Users/gustos/dev/python/algorithm/algo_study/img/theory/01-TimeComplexity/allergy.png)
+      ![](../../img/theory/01-TimeComplexity/allergy.png)
    
       1. 음식을 만드는 모든 경우의 수를 계산할 때마다. 모두 먹을 수 있는지 체크하기 때문에 시간복잡도는 (`O(N*M*2^M)`)
             1. M가지의 음식을 만들 경우와 만들지 않을 경우로 나눠 모든 경우의 수를 탐색한다. (`O(2^M)`)
@@ -79,14 +79,14 @@
    
 3. ### 시간 복잡도
 
-   ![](/Users/gustos/dev/python/algorithm/algo_study/img/theory/01-TimeComplexity/time_complexity_graph.png)
+   ![](../../img/theory/01-TimeComplexity/time_complexity_graph.png)
 
    - *알고리즘이 실행되는 동안 수행하는 기본적인 연산의 수를 입력의 크기에 대한 함수로 표현한 것*
    - 시간 복잡도가 높다 == 입력의 크기가 증가할 때 알고리즘의 수행 시간이 더 빠르게 증가한다.
    - But, 시간 복잡도가 낮다고 해서 언제나 더 빠른건 아니다.
    - ex) 10240 + 35*logN 과 2*N^2를 그래프로 비교했을 때, 전체적으로 봤을 때는 전자가 더 빠르나, N=10일 경우에는 2*N^2가 더 빠르다.
 
-   ![](/Users/gustos/dev/python/algorithm/algo_study/img/theory/01-TimeComplexity/compare_n2_and_const.png)
+   ![](../../img/theory/01-TimeComplexity/compare_n2_and_const.png)
 
    - 최선의 수행 시간
    - 최악의 수행 시간
