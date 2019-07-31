@@ -6,7 +6,7 @@
 - But, 시간 복잡도가 낮다고 해서 언제나 더 빠른건 아니다.
 - ex) 10240 + 35*logN 과 2*N^2를 그래프로 비교했을 때, 전체적으로 봤을 때는 전자가 더 빠르나, N=10일 경우에는 2*N^2가 더 빠르다.
 
-![](../../img/theory/01-TimeComplexity/compare_n2_and_log.png)
+![](../../img/theory/01-TimeComplexity/compare_n2_and_const.png)
 
 - 최선의 수행 시간
 - 최악의 수행 시간
