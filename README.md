@@ -93,3 +93,5 @@
   1. [막대기](https://www.acmicpc.net/problem/1094)
   2. [피보나치 수2](https://www.acmicpc.net/problem/2748)
   3. [단어 공부](https://www.acmicpc.net/problem/1157)
+  4. [수 정렬하기](https://www.acmicpc.net/problem/2750)
+  5. [팔](https://www.acmicpc.net/problem/1105)
