@@ -25,6 +25,7 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 
+
 memoize = [int(-1) for i in range(1000)]
 
 def dp_fibonacci(n):
