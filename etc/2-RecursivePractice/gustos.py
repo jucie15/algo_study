@@ -26,6 +26,15 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
+def hanoi(n, frm, by, to):
+    if n == 1:
+        print(frm, to)
+    else:
+        hanoi(n - 1, frm, to, by)
+        print(frm, to)
+        hanoi(n - 1, by, frm, to)
+
+
 memoize = [int(-1) for i in range(1000)]
 
 def dp_fibonacci(n):
@@ -51,4 +60,5 @@ if __name__ == "__main__":
     start = time.time()
     print(dp_fibonacci(n))
     print('피보2: ', time.time() - start)
+    hanoi(n, 'A', 'B', 'C')
 
