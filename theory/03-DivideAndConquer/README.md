@@ -121,5 +121,5 @@
 
 
 출처
-[합병정렬](https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html)
-[퀵정렬](https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html)
+   - [합병정렬](https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html)
+   - [퀵정렬](https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html)
