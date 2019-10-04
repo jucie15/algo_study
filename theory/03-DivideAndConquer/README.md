@@ -120,4 +120,6 @@
    - [Counting Inversions](https://www.acmicpc.net/problem/10090)
 
 
-[출처](https://gmlwjd9405.github.io/)
+출처
+[합병정렬](https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html)
+[퀵정렬](https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html)
