@@ -88,7 +88,7 @@
 
    - 합병 단계에서 최대 N번의 비교 연산을 하기 때문에 시간 복잡도는 최종적으로 `O(NlogN)`이 된다.
 
-   - 퀵 정렬의 경우, pivot 값을 기준으로 분할했을 때, 한 편으로 크게 치우치게 되면 성능이 저하된다. 이 경우(최악의 경우), 시간 복잡도는 `O(N)` 이 된다.
+   - 퀵 정렬의 경우, pivot 값을 기준으로 분할했을 때, 한 편으로 크게 치우치게 되면 성능이 저하된다. 이 경우(최악의 경우), 시간 복잡도는 `O(N^2)` 이 된다.
 
    - ![](../../img/theory/03-DivideAndConquer/time-complex-first.png)
 
@@ -120,4 +120,6 @@
    - [Counting Inversions](https://www.acmicpc.net/problem/10090)
 
 
-[출처](https://gmlwjd9405.github.io/)
+출처
+   - [합병정렬](https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html)
+   - [퀵정렬](https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html)
