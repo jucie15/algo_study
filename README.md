@@ -65,6 +65,9 @@
 
 1. [시간복잡도](https://github.com/jucie15/algo_study/tree/master/theory/01-TimeComplexity)
 2. [무식하게풀기](https://github.com/jucie15/algo_study/tree/master/theory/02-BruteForce)
+3. [분할정복](https://github.com/jucie15/algo_study/tree/master/theory/03-DivideAndConquer)
+4. [네트워크유량](https://github.com/jucie15/algo_study/tree/master/theory/04-NetworkFlow)
+5. [비트마스크](https://github.com/jucie15/algo_study/tree/master/theory/05-BitMask)
 
 
 
